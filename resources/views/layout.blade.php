@@ -21,21 +21,21 @@
                     </div>
                 </nav>
             </div>
-        </div>
+        </div><br>
 
         <div class="row">
             <div class="col-md-3">
                 <div class="sidebar">
                     <a class="active" href="#home">Home</a>
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
+                    <a href="{{url ('/students')}}">Student</a>
+                    <a href="{{url ('/teachers')}}">Teacher</a>
+                    <a href="{{url ('/courses')}}">Courses</a>
+                    <a href="{{url ('/enrollment')}}">Enrollment</a>
+                    <a href="{{url ('/payment')}}">Payment</a>
                 </div>
             </div>
             <div class="col-md-9">
-                <div class="content">
                      @yield('content')
-                </div>
             </div>
     <div>
 </head>
