@@ -10,7 +10,8 @@
         <p class="card-text">Name : {{ $students->name }}</p>
         <p class="card-text">Email : {{ $students->email }}</p>
         <p class="card-text">Address : {{ $students->address }}</p>
-        <p class="card-text">Mobile : {{ $students->mobile }}</p>
+        <p class="card-text">Mobile : {{ $students->mobile }}</p><br>
+        <a href="{{ url('/students') }}" class="btn btn-warning">Back to home</a>
   </div>
        
     </hr>

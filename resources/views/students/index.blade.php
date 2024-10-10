@@ -3,10 +3,10 @@
                 <div class="card">
                     <div class="card-header">
                         <h2 style= "color: #192a56";>Student Application</h2>
-                    </div>
+                    </div><br>
                     <div class="card-body">
                         <a href="{{ url('/students/create') }}" class="btn btn-success btn-sm" title="Add New Student">
-                            <i class="fa fa-plus" aria-hidden="true"></i> Add New
+                            <i class="fa fa-plus" aria-hidden="true"></i> Add New Student
                         </a>
                         <br/>
                         <br/>
