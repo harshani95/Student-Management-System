@@ -30,8 +30,8 @@
                     <a href="{{url ('/students')}}">Student</a>
                     <a href="{{url ('/teachers')}}">Teacher</a>
                     <a href="{{url ('/courses')}}">Courses</a>
-                    <a href="{{url ('/enrollment')}}">Enrollment</a> -->
-                    <!-- <a href="{{url ('/payment')}}">Payment</a> -->
+                    <a href="{{url ('/enrollment')}}">Enrollment</a> 
+                    <a href="{{url ('/payment')}}">Payment</a> -->
 
                     <a class="{{ Request::is('/') ? 'active' : '' }}" href="/">Home</a>
                     <a class="{{ Request::is('students') ? 'active' : '' }}" href="{{ url('/students') }}">Student</a>
