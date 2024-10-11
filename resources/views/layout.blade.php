@@ -37,6 +37,7 @@
                     <a class="{{ Request::is('students') ? 'active' : '' }}" href="{{ url('/students') }}">Student</a>
                     <a class="{{ Request::is('teachers') ? 'active' : '' }}" href="{{ url('/teachers') }}">Teacher</a>
                     <a class="{{ Request::is('courses') ? 'active' : '' }}" href="{{ url('/courses') }}">Courses</a>
+                    <a class="{{ Request::is('batches') ? 'active' : '' }}" href="{{ url('/batches') }}">Batch</a>
                     <a class="{{ Request::is('enrollment') ? 'active' : '' }}" href="{{ url('/enrollment') }}">Enrollment</a>
                     <a class="{{ Request::is('payment') ? 'active' : '' }}" href="{{ url('/payment') }}">Payment</a>
                 </div>
