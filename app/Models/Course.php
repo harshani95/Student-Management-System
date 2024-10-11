@@ -12,7 +12,7 @@ class Course extends Model
      protected $fillable = [
           'name',
           'syllabus',
-          'start_date',
+          'duration',
       ];
 
     use HasFactory;

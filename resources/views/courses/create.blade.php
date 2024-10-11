@@ -13,8 +13,8 @@
         <input type="text" name="name" id="name" class="form-control"></br>
         <label>Syllabus</label></br>
         <input type="text" name="syllabus" id="syllabus" class="form-control"></br>
-        <label>Start Date</label></br>
-        <input type="text" name="start_date" id="start_date" class="form-control"></br>
+        <label>Duration</label></br>
+        <input type="text" name="duration" id="duration" class="form-control"></br>
         <input type="submit" value="Save" class="btn btn-success">
         <a href="{{ url('/courses') }}" class="btn btn-danger">Cancel</a></br>
     </form>
