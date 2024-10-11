@@ -51,7 +51,7 @@ class TeacherController extends Controller
         $teacher = Teacher::find($id);
         $input = $request->all();
         $teacher->update($input);
-        return redirect('teacher')->with('flash_message', 'Teacher Updated!'); 
+        return redirect('teachers')->with('flash_message', 'Teacher Updated!'); 
     }
 
    
