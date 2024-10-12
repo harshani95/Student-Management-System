@@ -9,7 +9,7 @@
         <div class="card-body">
         <p class="card-text">Name : {{ $courses->name }}</p>
         <p class="card-text">Syllabus : {{ $courses->syllabus }}</p>
-        <p class="card-text">Duration : {{ $courses->duration }}</p><br>
+        <p class="card-text">Duration : {{ $courses->duration() }}</p><br>
         <a href="{{ url('/courses') }}" class="btn btn-warning">Back to home</a>
   </div>
        

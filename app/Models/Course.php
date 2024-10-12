@@ -16,4 +16,8 @@ class Course extends Model
       ];
 
     use HasFactory;
+
+    public function duration(){
+        return $this-> duration. " months";
+    }
 }

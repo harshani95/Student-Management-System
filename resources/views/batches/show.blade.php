@@ -8,7 +8,7 @@
    
         <div class="card-body">
         <p class="card-text">Batch Name : {{ $batches->name }}</p>
-        <p class="card-text">Course Name : {{ $batches->course_id }}</p>
+        <p class="card-text">Course Name : {{ $batches->course->name  }}</p>
         <p class="card-text">Start Date : {{ $batches->start_date }}</p><br>
         <a href="{{ url('/batches') }}" class="btn btn-warning">Back to home</a>
   </div>
