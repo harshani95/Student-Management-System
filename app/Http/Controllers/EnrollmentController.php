@@ -7,6 +7,7 @@ use Illuminate\Http\Response;
 use Illuminate\Http\RedirectResponse;
 use App\Models\Enrollment;
 use App\Models\Batch;
+use App\Models\Student;
 use Illuminate\View\View;
 
 class EnrollmentController extends Controller
@@ -14,6 +15,7 @@ class EnrollmentController extends Controller
     
     public function index() : View
     {
+        
         $enrollments = Enrollment::all();
         return view ('enrollments.index')->with('enrollments', $enrollments);
     }
@@ -22,8 +24,8 @@ class EnrollmentController extends Controller
     public function create()
     {
         $batches = Batch::pluck('name', 'id');
-        return view('enrollments.create', compact('batches'));
-        //return view('enrollments.create');
+        $students = Student::pluck('name', 'id');
+        return view('enrollments.create', compact('batches', 'students'));
     }
 
     
@@ -44,8 +46,11 @@ class EnrollmentController extends Controller
     
     public function edit(string $id) : View
     {
-        $enrollment = Enrollment::find($id);
-        return view('enrollments.edit')->with('enrollments', $enrollment);
+
+        $enrollments = Enrollment::find($id);
+        $batches = Batch::pluck('name', 'id');
+        $students = Student::pluck('name', 'id');
+        return view('enrollments.edit',  compact('enrollments', 'batches', 'students'));
     }
 
     

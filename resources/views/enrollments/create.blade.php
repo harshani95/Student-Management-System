@@ -13,7 +13,7 @@
         <input type="text" name="enrollment_no" id="enrollment_no" class="form-control"></br>
         <label>Batch Name</label></br>
         <select name="batch_id" id="batch_id" class="form-control">
-          @foreach($batchs as $id => $name)
+          @foreach($batches as $id => $name)
           <option value="{{ $id }}">{{ $name }}</option>
           @endforeach()
         </select></br>

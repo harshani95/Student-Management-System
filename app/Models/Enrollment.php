@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Enrollment extends Model
 {
-    protected $table = 'batches';
+    protected $table = 'enrollments';
     protected $primaryKey = 'id';
      protected $fillable = [
           'enrollment_no',
@@ -20,10 +20,10 @@ class Enrollment extends Model
     use HasFactory;
 
     public function batch(){
-        return  $this->belongsTo(Batch::class);
+        return $this->belongsTo(Batch::class);
       }
 
     public function student(){
-        return  $this->belongsTo(Student::class);
+        return $this->belongsTo(Student::class);
       }
 }

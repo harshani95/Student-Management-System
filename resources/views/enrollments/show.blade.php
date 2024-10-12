@@ -8,8 +8,8 @@
    
         <div class="card-body">
         <p class="card-text">Enrollment Number : {{ $enrollments->enrollment_no }}</p>
-        <p class="card-text">Batch Name : {{ $enrollments->batch_id }}</p>
-        <p class="card-text">Student Name : {{ $enrollments->student_id }}</p>
+        <p class="card-text">Batch Name : {{ $enrollments->batch->name }}</p>
+        <p class="card-text">Student Name : {{ $enrollments->student->name }}</p>
         <p class="card-text">Join Date : {{ $enrollments->join_date }}</p>
         <p class="card-text">Fee : {{ $enrollments->fee }}</p><br>
         <a href="{{ url('/enrollments') }}" class="btn btn-warning">Back to home</a>
