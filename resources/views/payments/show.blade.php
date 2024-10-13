@@ -7,7 +7,7 @@
   <div class="card-body">
    
         <div class="card-body">
-        <p class="card-text">Enrollment Number: {{ $payments->enrollment_no }}</p>
+        <p class="card-text">Enrollment Number: {{ $payments->enrollment->enrollment_no }}</p>
         <p class="card-text">Paid Date : {{ $payments->paid_date }}</p>
         <p class="card-text">Amount  : {{ $payments->amount }}</p><br>
         <a href="{{ url('/payments') }}" class="btn btn-warning">Back to home</a>

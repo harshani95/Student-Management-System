@@ -15,9 +15,11 @@ class Batch extends Model
           'start_date',
       ];
 
+      use HasFactory;
+
       public function course(){
         return  $this->belongsTo(Course::class);
       }
 
-    use HasFactory;
+    
 }
