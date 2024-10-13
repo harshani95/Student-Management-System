@@ -17,7 +17,8 @@ class ReportController extends Controller {
 
         $pdf = App::make('dompdf.wrapper');
         $print = "<div style='margin:20px; pading:20px'>";
-        $print  .= "<h1>Payment Receipt</h1>";
+        $print .= "<h1 style='color:#353b48;'>Payment Receipt</h1>";
+
         $print .= "<br/>";
         $print .= "<p>Receipt no : <b> " . $pid . "</b></p>";
         $print .= "<p>Date : <b> " . $payment->paid_date . "</b></p>";
